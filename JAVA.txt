@@ -1,0 +1,71 @@
+Java
+-JDK 설치 (Java Development Kit)
+-JRE 포함 (Java Runtime Environment)
+-JDK 종류
+ -Oracle JDK (Sun >Oracle)
+ -Open JDK
+-------------------------------------------->
+-Java Development Tool
+ -Eclipse (Free)
+ -IntelliJ (Commecial)
+ -vscode
+-------------------------------------------->
+-LTS- Long Time Service
+-환경변수 설정
+ -시스템 변수: JAVA_HOME (C:\Program Files\Java\jdk-17)
+ -path 등록: C:\Program Files\Java\jdk-17\bin (= %JAVA_HOME%\bin)
+
+-제어판 -> 시스템 -> 고급 시스템 설정 -> 환경 변수 -> 시스템 변수의 path를 클릭 후 편집 ->
+ 기존의 JAVA 변수 삭제 -> 시스템 변수 아래 새로 만들기에서 
+ 변수는 JAVA_HOME 으로 하고 값은 설치한 JAVA폴더 경로로 저장하기(새로 만듬 %JAVA_HOME%\bin)
+ ---> 나중에 쉽게 찾기 요함
+Eclipse 설치 (window 64,msi) D 드라이브 tools 폴더에 설치하고 '알아서 풀기' 누르기
+ ->Eclipse 폴더에 Eclipse.ini파일을 메모장으로 오픈해서 '-vm' 아래에 C:/Program Files/Java/jdk-17/bin(자바 설치 경로) 설치 후 기존 경로 없애기
+ -> 저장하고 닫기(C:\Program Files\Java\jdk-17\bin)
+
+Eclipse 실행 -> 저장 파일은 D 드라이브에 새로 만든 'java_lec'으로 설정후 실행
+-> 오른쪽 상단에 창문에 +로 되어있는 아이콘 클릭 후 JAVA로 설정후 ok 누르기 
+     ->오른쪽에 뜨는 기능들 다 끄기
+-> window > preferences 클릭 -> General > Appearance > Colors and Fonts >Text Font 클릭 후 Edit...>글자 크기 및 서체 변경
+			   ->Java > Editor > Syntax Coloring > methods(주황), classes(핑크), interfaces(회색)
+			   ->Java > Code Style > Formatter >new 클릭 > MyEclipse라고 OK > Spaces only로 변경 후 들여쓰기를 전부 2로 변경하기
+
+workspace에 java_lec 폴더 안에 txt 파일 만들어 제목이름을 전부 지운뒤 gitignore로 만들기
+-> 구글에서 gitignore.io를 검색, window,Eclipse,Java 를 검색후 나오는 정보들을 전부 복사하여
+ ->  gitignore 파일 안에 그대로 복사 후 저장
+
+그리고 java_lec 폴더 안에서 git Bash 열기
+github에서 java_lec 레파지토리 만들고 주소 복사
+
+git bash에서 git init -> git remote add origin 원격주소 -> git add .gitignore 
+ ->git commit -m 20241104 -> git push origin main 
+
+원격지에서 Add a README에서 # java_lec을 적고 오른쪽에 commit changes...를 클릭 후 저장 
+로컬지에도 똑같은 파일이 있어야 하기에 git pull origin main을 적고 업데이트하기 
+
+Window > Show View > Other...> git > git Repositories open
+------------------------------------------->
+JAVA 프로그램 구조
+
+자바프로젝트
+ →소스폴더 (src)
+  →패키지(package)
+   →클래스(class)
+    →메소드
+     →...
+      →main 메소드(jvm: java virtual macjine이 찾아서 실행하는 메소드)
+ →bin(실행폴더)
+javac.exe가 컴파일(컴퓨터가 읽을 수 있게 처리)을 해서 bin폴더에 저장해줌
+
+변수
+연산자
+제어문
+배열
+클래스와 객체
+상속과 인터페이스
+예외 처리
+컬렉션 프레임워크
+자바표준 API(Java클래스 사용방법)
+입출력 처리
+네트워크 처리
+람다식과 함수형 프로그래밍 (JS의 화살표 함수와 흡사)
