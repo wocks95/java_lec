@@ -24,6 +24,7 @@ public class ForEx {
     // 3단 출력하기
     for(int a = 1; a <= 9; a++) {
       System.out.println("3 x " + a + " = " +(3 * a));
+     
     }
   
   }
