@@ -12,7 +12,7 @@ public class PrimitiveEx {
     System.out.println(a);
     // Sysout + ctrl.spacebar
     
-    // 2. short : 2바이트 정수 - 사용 안 함
+    // 2. short : 2바이트 정수 -  --사용 안 함--
     short b = 32767;
     System.out.println(b);
     
@@ -20,11 +20,12 @@ public class PrimitiveEx {
     int c = 2147483647;
     System.out.println(c);
     
-    // 4. ★long : 8바이트 정수 - int 로 커버 불가능한 값에서 사용 
+    // 4. ★★long : 8바이트 정수 - int 로 커버 불가능한 값에서 사용 
     long d = 2147483648L; //long 타입의 값은 마지막에 L(l) 을 추가 (int 범위를 벗어난 값은 필수, 아니면 생략 가능)
     System.out.println(d);
+    System.out.println(Long.MAX_VALUE); // 최대 값을 찍어보며 실제 값을 알 수 있음
     
-    // 5. float (floating point) : 4바이트 실수 - 사용 안 함
+    // 5. float (floating point) : 4바이트 실수 -  --사용 안 함--
     float e = 1.111111111F; // float 타입의 값은 마지막에 F(f)를 추가
     System.out.println(e);
     
@@ -49,6 +50,7 @@ public class PrimitiveEx {
     // x = 20;
     
     // 상수 (constant variable)
+    // 변하지 말아야 할 데이터를 임시적으로 저장하기 위한 수단으로 사용된다.
     // 할당된 값을 바꿀 수 없다. 반드시 초기 할당이 필요하다.
     // final 키워드를 변수 선언 시 추가한다. 관례상 변수 명은 대문자로 작성한다.
     final double PI = 3.14;
