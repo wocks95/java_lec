@@ -37,7 +37,7 @@ public class TwoEx {
     for(int j = 0; j < seats[0].length; j++) {
       System.out.print(seats[0][j] + " ");
     }
-    System.err.println(); //줄 바꿈용도로 사용됨
+    System.out.println(); //줄 바꿈용도로 사용됨
     
     // 2번째 1차원 배열
     for(int j = 0; j < seats[1].length; j++) {

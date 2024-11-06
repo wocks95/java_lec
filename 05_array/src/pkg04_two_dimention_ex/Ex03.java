@@ -1,4 +1,4 @@
-package pkg04_two_dimension_ex;
+package pkg04_two_dimention_ex;
 
 public class Ex03 {
 
@@ -36,6 +36,25 @@ public class Ex03 {
         {0, 0, 1, 0, 0},
         {0, 0, 1, 0, 0}
     };
+    int[][] temp = new int[5][5];
+    for(int i = 0; i <T.length; i++) {
+      for(int j = 0; j <T[i].length; j++) {
+        temp[j][4-i] = T[i][j];
+        
+      }
+    }
+    T = temp;
+    
+    for(int i =0; i < T.length; i++) {
+      for(int j = 0; j <T[i].length; j++) {
+        System.out.print(String.format("%-2d",T[i][j]));
+      }
+      System.out.println();
+    }
+    
+    
+    
+    
     
   }
 
