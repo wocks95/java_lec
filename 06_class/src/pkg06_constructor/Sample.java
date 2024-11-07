@@ -25,13 +25,16 @@ public class Sample {
    
   // 매개변수가 있는 생성자
   Sample(String number) {
-  // this.number = Integer.parseInt(number);
-  
-  // this() : 생성자를 호출한다.
-  this(Integer.parseInt(number));
+    // this.number = Integer.parseInt(number);
+    // this() : 생성자를 호출한다.
+    this(Integer.parseInt(number));
   }
   
   
+  Sample(double number) {
+    // this.number = (int)number;
+    this((int)number);
+  }
   
    
    

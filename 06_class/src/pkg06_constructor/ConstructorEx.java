@@ -15,8 +15,9 @@ public class ConstructorEx {
     Sample s3 = new Sample("20");
     System.out.println(s3.number);
   
-  
-  
+    // Sample 타입의 인스턴스 s4 생성
+    Sample s4 = new Sample(1.5);
+    System.out.println(s4.number);
   
   }
 }
