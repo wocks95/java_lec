@@ -5,22 +5,6 @@ public class BankAccount {
   private String accNo;
   private long balance;
   
-  public String getAccNo() {
-    return accNo;
-  }
-
-  public void setAccNo(String accNo) {
-    this.accNo = accNo;
-  }
-
-  public long getBalance() {
-    return balance;
-  }
-
-  public void setBalance(long balance) {
-    this.balance = balance;
-  }
-
   public BankAccount(String accNo, long balance) {
     this.accNo = accNo;
     this.balance = balance;
