@@ -1,7 +1,7 @@
 package pkg12_Bakery;
 
 public class BreadNChange {
-
+  // 빵을 구매하기 위한 행동
   private int bread;
   private int change;
   
