@@ -12,9 +12,9 @@ public class PolyEx {
     System.out.println("-----------------------");
     // 다형성 : 하나의 코드로 여러 개의 실행을 수행할 수 있다.
     Computer[] computers = new Computer[3];
-    computers[0] = new Tablet();
-    computers[1] = new Computer();
-    computers[2] = new Tablet();
+    computers[0] = new Tablet();       //오버로이드 된 자식멤버 호출
+    computers[1] = new Computer();     //부모멤버 호출
+    computers[2] = new Tablet();       //오버로이드 된 자식멤버 호출
     for(Computer computer : computers) {
       computer.screenTouch();
     }

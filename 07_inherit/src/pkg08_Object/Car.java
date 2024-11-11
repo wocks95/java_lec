@@ -1,5 +1,18 @@
 package pkg08_Object;
-
+/*
+  ┌-------------------┐
+  │ Object            │ 슈퍼 클래스
+  │-------------------│
+  │ toString          │
+  └-------------------┘
+          ▲
+  ┌-------------------┐
+  │ Car               │ 서브 클래스
+  │-------------------│
+  │ @Override         │
+  │ toString          │
+  └-------------------┘    
+*/
 public class Car {
   
   private String brand;
