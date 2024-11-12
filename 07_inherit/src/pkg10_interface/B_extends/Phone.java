@@ -1,4 +1,4 @@
-package pkg10_interface._extends;
+package pkg10_interface.B_extends;
 
 /**
  * 인터페이스 상속

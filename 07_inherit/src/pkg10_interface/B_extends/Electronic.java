@@ -1,4 +1,4 @@
-package pkg10_interface._extends;
+package pkg10_interface.B_extends;
 
 public interface Electronic {
   
@@ -8,7 +8,5 @@ public interface Electronic {
   // 추상 메소드
   /* public abstract */ void powerOn();
   /* public abstract */ void powerOff();
-  
-  
 
 }

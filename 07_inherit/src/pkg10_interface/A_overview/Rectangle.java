@@ -1,4 +1,4 @@
-package pkg10_interface.overview;
+package pkg10_interface.A_overview;
 
 /*
  *    클래스 상속 vs 인터페이스 구현
