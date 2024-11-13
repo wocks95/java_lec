@@ -9,7 +9,6 @@ public class CheckEx {
   // : Unchecked Exception (RuntimeException 클래스와 그 하위 클래스)
   public static void a() {
 
-    
     // NumberFormatException  발생
     Integer.parseInt("");
     
@@ -22,11 +21,9 @@ public class CheckEx {
   // 예외 핸들링이 없으면 실행이 불가능한 예외
   // : Checked Exception (RuntimeException 클래스를 제외한 모든 예외 클래스)
   public static void b() {
-    
     try {
       new URL("https://www.google.com/");
     } catch (MalformedURLException e) {
-      
       e.printStackTrace();
     }
     
