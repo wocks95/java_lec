@@ -1,4 +1,4 @@
-package pkg00_square;
+package pkg11_square;
 
 public class SquareEx {
 

@@ -1,4 +1,4 @@
-package pkg00_Carrier;
+package pkg12_Carrier;
 /*
   ┌-------------------┐
   │ Coffee            │ 슈퍼 클래스
@@ -14,17 +14,14 @@ package pkg00_Carrier;
   │-------------------│
   │ Espresso(String)  │
   └-------------------┘
-            ▲
-  ┌-------------------┐
-  │ Americano         │ 서브 클래스
-  │-------------------│
-  │ Americano(String) │
-  └-------------------┘
 */
-public class Americano extends Espresso {
-
-  public Americano(String name) {
+public class Espresso extends Coffee {
+  
+  public Espresso(String name) {
     super(name);
   }
+
+ 
+
   
 }
