@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 public class Class04_LocalDateTime {
 
-  /*
+  /* ★★★
    * LocalDate     : 날짜
    * LocalTime     : 시간
    * LocalDateTime : 둘다
@@ -55,15 +55,19 @@ public class Class04_LocalDateTime {
     
     // 원하는 날짜/시간 형식 지정하기
     
+//    LocalDateTime now = LocalDateTime.now();
+//    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy년 MM월 dd일 E요일 HH시 mm분 ss초");
+//    String result = formatter.format(now);
+//    System.out.println(result);
     LocalDateTime now = LocalDateTime.now();
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy년 MM월 dd일 E요일 HH시 mm분 ss초");
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy년 M월 dd일 E요일 HH시 mm분 ss초");
     String result = formatter.format(now);
     System.out.println(result);
     
   }
   
   public static void main(String[] args) {
-    method3();   
+    method1();   
   }
   
 }
