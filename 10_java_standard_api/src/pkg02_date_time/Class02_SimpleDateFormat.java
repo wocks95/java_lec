@@ -23,7 +23,7 @@ public class Class02_SimpleDateFormat {
     
 //    Date date = new Date();
 //    SimpleDateFormat sdf = new SimpleDateFormat("a h:mm yyyy-MM-dd");
-//    String result = sdf.format(date);
+//    String result = sdf.format(date);   <- new Sim...("...").format(date)
 //    System.out.println(result);
     
     Date date = new Date();
