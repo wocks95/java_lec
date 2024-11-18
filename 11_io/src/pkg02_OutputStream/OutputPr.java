@@ -18,7 +18,7 @@ public class OutputPr {
     if(!dir.exists())
       dir.mkdirs();
     
-    File file = new File(dir, "simple.txt");
+    File file = new File(dir, "sample.dat");
     
     FileOutputStream out = null;
     
@@ -50,7 +50,7 @@ public class OutputPr {
     if(!dir.exists());
     dir.mkdirs();
     
-    File file = new File(dir, "simple2.dat");
+    File file = new File(dir, "sample2.dat");
     
     FileOutputStream out = null;
     
@@ -80,7 +80,7 @@ public class OutputPr {
     if(!dir.exists())
       dir.mkdirs();
     
-    File file = new File(dir, "simple3.dat");
+    File file = new File(dir, "sample3.dat");
     
     BufferedOutputStream out = null;
     
@@ -109,7 +109,7 @@ public class OutputPr {
   }
   
   public static void d() { //변수 그대로 출력하는 스트림
-    File file = new File("\\praice", "simple4.abt");
+    File file = new File("\\praice", "sample4.abt");
     
     DataOutputStream out = null;
     
@@ -146,7 +146,7 @@ public class OutputPr {
   }
   
   public static void e() { //인스턴스를 출력 할 수 있는 스트림
-    File file = new File("\\praice", "simple5.dat");
+    File file = new File("\\praice", "sample5.dat");
     ObjectOutputStream out = null;
     
     try {
@@ -220,7 +220,7 @@ public class OutputPr {
   
   
   public static void main(String[] args) {
-    h();
+    e();
 
   }
 

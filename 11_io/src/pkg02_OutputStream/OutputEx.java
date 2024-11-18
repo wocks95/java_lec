@@ -63,7 +63,7 @@ public class OutputEx {
     if(!dir.exists())
       dir.mkdirs();
     
-    File file = new File(dir, "simple2.dat");
+    File file = new File(dir, "sample2.dat");
     
     FileOutputStream out = null;
     
@@ -97,7 +97,7 @@ public class OutputEx {
     if(!dir.exists())
       dir.mkdirs();
     
-    File file = new File(dir, "simple3.dat");
+    File file = new File(dir, "sample3.dat");
     
     BufferedOutputStream out = null;
     
@@ -133,7 +133,7 @@ public class OutputEx {
     if(!dir.exists());
     dir.mkdirs();
     
-    File file = new File(dir, "simple4.dat");
+    File file = new File(dir, "sample4.dat");
     
     DataOutputStream out =null;
     
@@ -179,7 +179,7 @@ public class OutputEx {
     if(!dir.exists())
       dir.mkdirs();
     
-    File file = new File(dir, "simple5.dat");
+    File file = new File(dir, "sample5.dat");
     
     ObjectOutputStream out = null;
     
@@ -188,7 +188,10 @@ public class OutputEx {
       out = new ObjectOutputStream(new FileOutputStream(file));
       
       out.writeObject(new Car("genesis", "G90")); //직렬화가 가능한 인스턴스를 출력할 수 있다.
+      out.writeObject(new Car("volvo", "XC90"));
+      out.writeObject(new Car("bmw", "X7"));
       
+         
     } catch (IOException e) {
         e.printStackTrace();
     } finally {
@@ -203,7 +206,7 @@ public class OutputEx {
   }
   
   public static void main(String[] args) {
-    d();
+    e();
 
   }
 
