@@ -244,7 +244,7 @@ public class OpenapiEx {
   }
   
   public static void main(String[] args) throws Exception {
-    d();
+    e();
     
   }
 

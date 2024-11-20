@@ -6,6 +6,8 @@ package Pkg02_Functional_Interface;
  *  T get();
  * 
  * }
+ * 
+ * 값을 지연 생성하거나 반복적인 작업을 처리할 때 유용합니다.
  */
 
 import java.util.function.Supplier;

@@ -10,6 +10,10 @@ import java.util.function.Function;
  *    R apply(T t);
  *  }
  * 
+ * 
+ * Function 인터페이스는 입력값을 받아서 결과값을 반환하는 함수적 기능을 제공합니다.
+ * Function 인터페이스는 java.util.function 패키지에 포함되어 있으며, 
+ * 주로 단일 입력값을 처리하여 결과를 반환하는 데 사용됩니다.
  */
 public class Class03_Function {
 

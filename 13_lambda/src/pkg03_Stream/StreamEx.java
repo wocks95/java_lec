@@ -128,7 +128,7 @@ public class StreamEx {
     
   }
   public static void main(String[] args) throws Exception {
-    d();
+    c();
 
   }
 
