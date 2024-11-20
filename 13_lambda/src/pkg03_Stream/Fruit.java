@@ -1,5 +1,5 @@
 package pkg03_Stream;
-
+ /*Lombok이란 곳에서 파일 설치하기*/
 public class Fruit {
   
   private String name;

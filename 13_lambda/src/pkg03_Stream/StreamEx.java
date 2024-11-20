@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /*
@@ -80,8 +81,54 @@ public class StreamEx {
     
   }
   
+  public static void c() {
+    
+    List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    numbers.stream()
+      .map(number -> number * number)
+      .forEach(number -> System.out.println(number));
+    
+    List<Fruit> fruits = Arrays.asList(
+        new Fruit("단감", 1000),
+        new Fruit("포도", 2000),
+        new Fruit("사과", 3000)
+        );
+    
+    fruits.stream()
+      .filter(fruit -> fruit.getName().equals("포도")) // 과일의 이름이 포도인 경우만 true 로 인정, 반환
+      .map(fruit -> new Fruit(fruit.getName(), fruit.getPrice() + 1000))
+      .forEach(fruit -> System.out.println(fruit));
+    
+    // 연습. JAVA_HOME의 이름 뒤에 "폴더","파일" 추가해서 출력하기
+    File javaHome = new File("C:\\Program Files\\Java\\jdk-17");
+    Arrays.stream(javaHome.listFiles())
+      .map(file -> file.isDirectory() ? file.getName() + "폴더" : file.getName() + "파일")
+      .forEach(file -> System.out.println(file));
+    
+  }
+  
+  public static void d() {
+    
+    List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    
+    // Mutable List
+    List<Integer> evenNumbers = numbers.stream()
+      .filter(number -> number % 2 == 0)
+      .collect(Collectors.toList()); // collect 메서드를 사용시 원하는대로 작업이 가능하다.
+    evenNumbers.add(12); // 작업 가능
+    
+    // Immutable List
+    List<Integer> oddNumbers = numbers.stream()
+      .filter(number -> number % 2 == 1)
+      .toList(); // toList 메서드를 사용시 원하는대로 작업이 안된다.
+    // oddNumbers.add(11); 작업 불가
+    
+    evenNumbers.stream().forEach(number -> System.out.println(number));
+    oddNumbers.stream().forEach(number -> System.out.println(number));
+    
+  }
   public static void main(String[] args) throws Exception {
-    b();
+    d();
 
   }
 
